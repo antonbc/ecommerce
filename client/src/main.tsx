@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 // import { createBrowserRouter } from 'react-router-dom'
 import './index.css'
-import NavigationBar from './components/NavigationBar'
+import NavigationBar from './components/Navbar/NavigationBar'
 
 
 createRoot(document.getElementById('root')!).render(
