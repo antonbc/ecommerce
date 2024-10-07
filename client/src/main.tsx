@@ -1,14 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 // import { createBrowserRouter } from 'react-router-dom'
-import './index.css'
-import NavigationBar from './components/Navbar/NavigationBar'
+import "./index.css";
+import HomePage from "./pages/HomePage";
 
-
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <>
-      <NavigationBar/>
+      <HomePage />
     </>
-  </StrictMode>,
-)
+  </StrictMode>
+);
