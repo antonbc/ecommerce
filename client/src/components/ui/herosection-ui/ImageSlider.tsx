@@ -20,9 +20,9 @@ function ImageSlider() {
 
   return (
     <div className="relative h-full">
-      <FaChevronLeft className="p-2 rounded-2xl text-4xl bg-slate-100 cursor-pointer" onClick={goToPreviousSlide}/>
-      <FaChevronRight className="p-2 rounded-2xl text-4xl bg-slate-100 cursor-pointer" onClick={goToNextSlide}/>
-      <div className="w-full h-full bg-center bg-cover" style={{backgroundImage: `url(${Slides[currentIndex].url})`}}>
+      <FaChevronLeft className="p-2 z-1 top-1/2 left-2 absolute rounded-2xl text-4xl bg-slate-100 cursor-pointer" onClick={goToPreviousSlide}/>
+      <FaChevronRight className="p-2 z-1 top-1/2 right-2 absolute rounded-2xl text-4xl bg-slate-100 cursor-pointer" onClick={goToNextSlide}/>
+      <div className="w-full h-[85vh] bg-center bg-cover" style={{backgroundImage: `url(${Slides[currentIndex].url})`}}>
 
       </div>
     </div>
