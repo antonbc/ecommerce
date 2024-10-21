@@ -1,4 +1,4 @@
-//import { useState } from "react";
+import { useState } from "react";
 
 function ImageSlider() {
   const [pageIndex, setPageIndex] = useState(0)
@@ -9,10 +9,10 @@ function ImageSlider() {
   function handleNextPageClick(){
     return setPageIndex(pageIndex + 1)
   }
-  
+
   return (
-    <div className="">
-      <img src="src/assets/images/heroimage1.jpg" alt="hero-image-1" className="w-full h-full object-cover"/>
+    <div className="relative h-full">
+      <div className="w-full h-full bg-center bg-cover bg-[url('')]"></div>
     </div>
   );
 }
