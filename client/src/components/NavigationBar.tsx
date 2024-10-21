@@ -1,7 +1,7 @@
 import Logo from "./ui/navbar-ui/Logo";
 import SearchBar from "./ui/navbar-ui/SearchBar";
 import UserActions from "./ui/navbar-ui/UserActions";
-import NavigationLinks from "./ui/navbar-ui/NavigationLinks";
+//import NavigationLinks from "./ui/navbar-ui/NavigationLinks";
 import { IoMenu as Menu } from "react-icons/io5";
 import { FaChevronDown } from "react-icons/fa";
 
