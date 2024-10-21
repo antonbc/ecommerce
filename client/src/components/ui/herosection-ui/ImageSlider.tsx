@@ -22,7 +22,7 @@ function ImageSlider() {
     <div className="relative h-full">
       <FaChevronLeft className="p-2 rounded-2xl text-4xl bg-slate-100 cursor-pointer" onClick={goToPreviousSlide}/>
       <FaChevronRight className="p-2 rounded-2xl text-4xl bg-slate-100 cursor-pointer" onClick={goToNextSlide}/>
-      <div className="w-full h-full bg-center bg-cover" style={{backgroundImage: `url(${Slides[currentIndex]})`}}>
+      <div className="w-full h-full bg-center bg-cover" style={{backgroundImage: `url(${Slides[currentIndex].url})`}}>
 
       </div>
     </div>
