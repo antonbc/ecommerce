@@ -18,7 +18,7 @@ function ImageSlider() {
     setCurrentIndex(newIndex);
   }
 
-  function goToSlide(slideIndex) {
+  function goToSlide(slideIndex : number) {
     setCurrentIndex(slideIndex);
   }
 
@@ -40,7 +40,7 @@ function ImageSlider() {
         {Slides.map((_, slideIndex) => (
           <GoDotFill
             key={slideIndex}
-            className="text-3xl"
+            className={`text-3xl cursor-pointer ${currentIndex === slideIndex ? 'text-slate-400' : 'text-slate-100'}`}
             onClick={() => {
               goToSlide(slideIndex);
             }}
