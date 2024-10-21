@@ -19,9 +19,9 @@ function NavigationBar() {
       <div className="mx-auto sm:mx-4 md:mx-8 max-w-screen-xl flex items-center text-base">
         <div className="py-2.5 flex justify-between items-center w-full">
           <button type="button" className="flex justify-between items-center">
-            <Menu />
+            <Menu className="mr-1"/>
             <span>All Categories</span>
-            <FaChevronDown className="text-xs" />
+            <FaChevronDown className="text-xs ml-1" />
           </button>
         </div>
       </div>
