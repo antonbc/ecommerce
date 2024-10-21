@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa";
 
 function NavigationBar() {
   return (
-    <nav className="top-0 sticky bg-gray-800 text-neutral-200 antialiased">
+    <nav className="z-50 top-0 sticky bg-gray-800 text-neutral-200 antialiased">
       <div className="mx-auto max-w-screen-xl sm:mx-4 md:mx-8 font-medium border-b border-gray-600">
         <div className="py-2 flex justify-between items-center w-full">
           <Logo />
