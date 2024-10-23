@@ -33,7 +33,7 @@ function ImageSlider() {
         onClick={goToNextSlide}
       />
       <div
-        className="w-full h-[85vh] bg-center bg-cover"
+        className="w-full h-[90vh] bg-center bg-cover"
         style={{ backgroundImage: `url(${Slides[currentIndex].url})` }}
       ></div>
       <div className="absolute bottom-0 left-0 right-0 mx-auto  z-1 flex items-center justify-center ">
