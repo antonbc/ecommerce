@@ -34,7 +34,7 @@ function CategoriesCard() {
                     <h2 className="text-white text-lg font-semibold text-start">
                         {card.description}
                     </h2>
-                    <span className="text-blue-400 font-medium text-start">
+                    <span className="text-blue-500 font-medium text-start cursor-pointer hover:underline">
                         See more {card.category} deals →
                     </span>
                 </div>
