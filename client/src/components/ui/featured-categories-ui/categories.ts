@@ -1,6 +1,6 @@
-import img1 from '../../../assets/images/ps5-controller-dark.svg';
-import img2 from '../../../assets/images/macbook-pro-dark.svg';
-import img3 from '../../../assets/images/ipad-keyboard-dark.svg';
+import img1 from '../../../assets/svgs/ps5-controller-dark.svg';
+import img2 from '../../../assets/svgs/macbook-pro-dark.svg';
+import img3 from '../../../assets/svgs/ipad-keyboard-dark.svg';
 
 
 const Categories = [ 
