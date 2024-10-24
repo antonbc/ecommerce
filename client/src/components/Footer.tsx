@@ -25,7 +25,7 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 mb-16 border-t border-gray-700">
         {/* Overall Header for Categories */}
         <h2 className="font-bold text-neutral-200 text-2xl my-8 text-center lg:text-left">
-          Categories
+          Departments
         </h2>
 
         {/* Categories Grid */}
