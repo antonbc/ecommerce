@@ -1,5 +1,5 @@
 import departments from "./departments";
-
+import { Link } from "react-router-dom";
 function DepartmentCard() {
     return (
         <>
@@ -31,7 +31,8 @@ function DepartmentCard() {
                             </div>
                         ))}
                     </div>
-                    <h6 className="text-blue-500 cursor-pointer hover:underline">Shop now →</h6>
+                    <Link to={`/${department.departmentName}`} className="text-blue-500 cursor-pointer hover:underline">Shop now →</Link>
+                    {/*convert to react router link */}
                 </div>
             ))}
         </>
