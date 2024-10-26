@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 function Logo() {
     return (
-      <div>LOGO</div>
+      <Link to={'/'} className="cursor-pointer">LOGO</Link>
     );
   }
   
