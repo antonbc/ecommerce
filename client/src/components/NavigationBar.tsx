@@ -1,9 +1,8 @@
 import Logo from "./ui/navbar-ui/Logo";
 import SearchBar from "./ui/navbar-ui/SearchBar";
 import UserActions from "./ui/navbar-ui/UserActions";
-//import NavigationLinks from "./ui/navbar-ui/NavigationLinks";
-import { IoMenu as Menu } from "react-icons/io5";
-import { FaChevronDown } from "react-icons/fa";
+import NavigationLinks from "./ui/navbar-ui/NavigationLinks";
+
 
 function NavigationBar() {
   return (
@@ -17,12 +16,8 @@ function NavigationBar() {
       </div>
 
       <div className="mx-auto sm:mx-4 md:mx-8 max-w-screen-xl flex items-center text-base">
-        <div className="py-2.5 flex justify-between items-center w-full">
-          <button type="button" className="flex justify-between items-center">
-            <Menu className="mr-1"/>
-            <span>All Categories</span>
-            <FaChevronDown className="text-xs ml-1" />
-          </button>
+        <div className="py-2 flex justify-between items-center w-full">
+          <NavigationLinks/>
         </div>
       </div>
     </nav>
