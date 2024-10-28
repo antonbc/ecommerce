@@ -14,27 +14,19 @@ import { useEffect, useState } from "react";
 
 const navLinks = [
   { to: "/", label: "Today's Deals" },
-  { to: "/", label: "Customer Service" },
-  { to: "/", label: "Gift Cards" },
-  { to: "/", label: "New Arrivals" },
+  { to: "/customer-service", label: "Customer Service" },
+  { to: "/gift-cards", label: "Gift Cards" },
+  { to: "/new-arrivals", label: "New Arrivals" },
 ];
 
 const departmentLinks = [
   { label: "All Departments", to: "/department", icon: <TiThSmall /> },
-  { label: "Electronics", to: "/electronics", icon: <MdOutlineShoppingBag /> },
-  { label: "Computers", to: "/computers", icon: <RiComputerLine /> },
-  { label: `Men's Fashion`, to: "/mens-fashion", icon: <IoShirtOutline /> },
-  { label: `Women's Fashion`, to: "/womens-fashion", icon: <PiDress /> },
-  {
-    label: "Sports & Outdoors",
-    to: "/sports-outdoors",
-    icon: <MdOutlineSportsTennis />,
-  },
-  {
-    label: "Home and Kitchen",
-    to: "/home-kitchen",
-    icon: <CgSmartHomeRefrigerator />,
-  },
+  { label: "Electronics", to: "/department/electronics", icon: <MdOutlineShoppingBag /> },
+  { label: "Computers", to: "/department/computers", icon: <RiComputerLine /> },
+  { label: `Men's Fashion`, to: "/department/mens-fashion", icon: <IoShirtOutline /> },
+  { label: `Women's Fashion`, to: "/department/womens-fashion", icon: <PiDress /> },
+  { label: "Sports & Outdoors", to: "/department/sports-outdoors", icon: <MdOutlineSportsTennis /> },
+  { label: "Home and Kitchen", to: "/department/home-kitchen", icon: <CgSmartHomeRefrigerator /> },
 ];
 
 type LinkStyleProps = {
@@ -73,7 +65,7 @@ function NavigationLinks() {
         <li>
           <button
             onClick={toggleMenu}
-            className="flex items-center text-xs sm:text-base"
+            className="flex items-center text-xs sm:text-sm"
           >
             <Menu className="mr-1 text-2xl" />
             All
@@ -83,7 +75,7 @@ function NavigationLinks() {
           <li key={index}>
             <NavLink
               to={link.to}
-              className="flex items-center text-xs sm:text-base hover:underline"
+              className="flex items-center text-xs sm:text-sm hover:underline"
               style={linkStyle}
             >
               {link.label}
@@ -108,7 +100,7 @@ function NavigationLinks() {
           <div className="bg-gray-800 flex justify-between items-center py-3 pl-4 pr-1">
             <Link
               to="/"
-              className="flex items-center gap-2 text-2xl font-bold tracking-wide text-neutral-200"
+              className="flex items-center gap-2 text-2xl font-bold tracking-wide "
             >
               <MdAccountCircle />
               <span>Hello, sign in</span>
