@@ -10,12 +10,10 @@ function BreadCrumbs() {
     <div className="bg-gray-900 p-2">
       <nav className="flex items-center gap-2 text-gray-500 font-semibold text-sm">
         {/* Always show a link to Home */}
-        <div className="flex items-center gap-2 hover:text-gray-200">
-          <AiFillHome className="" />
-          <Link to="/">
+          <Link to="/" className="flex items-center gap-2 hover:text-gray-200">
+           <AiFillHome className="" />
             Home
           </Link>
-        </div>
 
         {pathnames.map((pathname, index) => (
           <>
