@@ -32,9 +32,9 @@ function SortButton() {
       </button>
 
         {isOpen && (
-            <div className="absolute mx-auto mt-2 flex flex-col items-start font-medium text-sm bg-gray-800 text-gray-400 border border-gray-700 rounded-md p-1">
+            <div className="absolute mx-auto mt-2 flex flex-col font-base text-sm bg-gray-800 text-gray-400 border border-gray-700 rounded-md p-1">
                 {sortOptions.map((option, index) => (
-                    <button type="button" key={index} onClick={() => toggleSortOption(option)} className="hover:bg-gray-700 rounded-md p-1">
+                    <button type="button" key={index} onClick={() => toggleSortOption(option)} className="hover:bg-gray-700 hover:text-gray-300 rounded-md py-1 px-2 w-full text-start">
                         {option}
                     </button>
                 ))}
