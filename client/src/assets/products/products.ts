@@ -13,509 +13,262 @@ import img12 from '../svgs/imac-components-dark.svg';
 
 const products = [
     {
-        image: img1,
+        id: 1,
+        imageUrl: img1,
         name: 'PlayStation 5',
         price: '750',
         rating: 4.5,
         reviewCount: 30
     },
     {
-        image: img2,
+        id: 2,
+        imageUrl: img2,
         name: 'Iphone 15 Pro Max',
         price: '1199',
         rating: 5,
         reviewCount: 89
     },
     {
-        image: img3,
+        id: 3,
+        imageUrl: img3,
         name: 'Apple Watch Series 8',
         price: '399',
         rating: 3.5,
         reviewCount: 126
     },
     {
-        image: img4,
+        id: 4,
+        imageUrl: img4,
         name: 'Ipad Pro 11-inch',
         price: '1299',
         rating: 4,
         reviewCount: 432
     },
     {
-        image: img5,
+        id: 5,
+        imageUrl: img5,
         name: 'Macbook Pro M3',
         price: '2150',
         rating: 5,
         reviewCount: 40
     },
     {
-        image: img6,
+        id: 6,
+        imageUrl: img6,
         name: 'Xbox Series X',
         price: '750',
         rating: 5,
         reviewCount: 35
     },
     {
-        image: img7,
+        id: 7,
+        imageUrl: img7,
         name: 'Ipad Air 2023',
         price: '950',
         rating: 3.5,
         reviewCount: 23
     },
     {
-        image: img8,
+        id: 8,
+        imageUrl: img8,
+        name: 'PlayStation 5 Controller',
+        price: '50',
+        rating: 4.5,
+        reviewCount: 72
+    },
+    // Duplicates with unique IDs
+    {
+        id: 9,
+        imageUrl: img1,
+        name: 'PlayStation 5',
+        price: '750',
+        rating: 4.5,
+        reviewCount: 30
+    },
+    {
+        id: 10,
+        imageUrl: img2,
+        name: 'Iphone 15 Pro Max',
+        price: '1199',
+        rating: 5,
+        reviewCount: 89
+    },
+    {
+        id: 11,
+        imageUrl: img3,
+        name: 'Apple Watch Series 8',
+        price: '399',
+        rating: 5,
+        reviewCount: 126
+    },
+    {
+        id: 12,
+        imageUrl: img4,
+        name: 'Ipad Pro 11-inch',
+        price: '1299',
+        rating: 3.5,
+        reviewCount: 432
+    },
+    {
+        id: 13,
+        imageUrl: img5,
+        name: 'Macbook Pro M3',
+        price: '2150',
+        rating: 5,
+        reviewCount: 40
+    },
+    {
+        id: 14,
+        imageUrl: img6,
+        name: 'Xbox Series X',
+        price: '750',
+        rating: 5,
+        reviewCount: 35
+    },
+    {
+        id: 15,
+        imageUrl: img7,
+        name: 'Ipad Air 2023',
+        price: '950',
+        rating: 3.5,
+        reviewCount: 23
+    },
+    {
+        id: 16,
+        imageUrl: img8,
         name: 'PlayStation 5 Controller',
         price: '50',
         rating: 4.5,
         reviewCount: 72
     },
     {
-        image: img9,
+        id: 17,
+        imageUrl: img9,
         name: 'PlayStation 5',
         price: '750',
         rating: 4.5,
         reviewCount: 30
     },
     {
-        image: img10,
+        id: 18,
+        imageUrl: img10,
         name: 'Iphone 15 Pro Max',
         price: '1199',
         rating: 5,
         reviewCount: 89
     },
     {
-        image: img11,
+        id: 19,
+        imageUrl: img11,
         name: 'Apple Watch Series 8',
         price: '399',
         rating: 5,
         reviewCount: 126
     },
     {
-        image: img12,
+        id: 20,
+        imageUrl: img12,
         name: 'Ipad Pro 11-inch',
         price: '1299',
         rating: 3.5,
         reviewCount: 432
-    },   
+    },
     {
-        image: img1,
+        id: 21,
+        imageUrl: img1,
         name: 'PlayStation 5',
         price: '750',
         rating: 4.5,
         reviewCount: 30
     },
     {
-        image: img2,
+        id: 22,
+        imageUrl: img2,
         name: 'Iphone 15 Pro Max',
         price: '1199',
         rating: 5,
         reviewCount: 89
     },
     {
-        image: img3,
+        id: 23,
+        imageUrl: img3,
         name: 'Apple Watch Series 8',
         price: '399',
         rating: 3.5,
         reviewCount: 126
     },
     {
-        image: img4,
+        id: 24,
+        imageUrl: img4,
         name: 'Ipad Pro 11-inch',
         price: '1299',
         rating: 4,
         reviewCount: 432
     },
     {
-        image: img5,
+        id: 25,
+        imageUrl: img5,
         name: 'Macbook Pro M3',
         price: '2150',
         rating: 5,
         reviewCount: 40
     },
     {
-        image: img6,
+        id: 26,
+        imageUrl: img6,
         name: 'Xbox Series X',
         price: '750',
         rating: 5,
         reviewCount: 35
     },
     {
-        image: img7,
+        id: 27,
+        imageUrl: img7,
         name: 'Ipad Air 2023',
         price: '950',
         rating: 3.5,
         reviewCount: 23
     },
     {
-        image: img8,
+        id: 28,
+        imageUrl: img8,
         name: 'PlayStation 5 Controller',
         price: '50',
         rating: 4.5,
         reviewCount: 72
     },
     {
-        image: img9,
+        id: 29,
+        imageUrl: img9,
         name: 'PlayStation 5',
         price: '750',
         rating: 4.5,
         reviewCount: 30
     },
     {
-        image: img10,
+        id: 30,
+        imageUrl: img10,
         name: 'Iphone 15 Pro Max',
         price: '1199',
         rating: 5,
         reviewCount: 89
     },
     {
-        image: img11,
+        id: 31,
+        imageUrl: img11,
         name: 'Apple Watch Series 8',
         price: '399',
         rating: 5,
         reviewCount: 126
     },
     {
-        image: img12,
+        id: 32,
+        imageUrl: img12,
         name: 'Ipad Pro 11-inch',
         price: '1299',
         rating: 3.5,
         reviewCount: 432
     },
-    {
-        image: img1,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img2,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img3,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 3.5,
-        reviewCount: 126
-    },
-    {
-        image: img4,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 4,
-        reviewCount: 432
-    },
-    {
-        image: img5,
-        name: 'Macbook Pro M3',
-        price: '2150',
-        rating: 5,
-        reviewCount: 40
-    },
-    {
-        image: img6,
-        name: 'Xbox Series X',
-        price: '750',
-        rating: 5,
-        reviewCount: 35
-    },
-    {
-        image: img7,
-        name: 'Ipad Air 2023',
-        price: '950',
-        rating: 3.5,
-        reviewCount: 23
-    },
-    {
-        image: img8,
-        name: 'PlayStation 5 Controller',
-        price: '50',
-        rating: 4.5,
-        reviewCount: 72
-    },
-    {
-        image: img9,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img10,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img11,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 5,
-        reviewCount: 126
-    },
-    {
-        image: img12,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 3.5,
-        reviewCount: 432
-    },   
-    {
-        image: img1,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img2,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img3,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 3.5,
-        reviewCount: 126
-    },
-    {
-        image: img4,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 4,
-        reviewCount: 432
-    },
-    {
-        image: img5,
-        name: 'Macbook Pro M3',
-        price: '2150',
-        rating: 5,
-        reviewCount: 40
-    },
-    {
-        image: img6,
-        name: 'Xbox Series X',
-        price: '750',
-        rating: 5,
-        reviewCount: 35
-    },
-    {
-        image: img7,
-        name: 'Ipad Air 2023',
-        price: '950',
-        rating: 3.5,
-        reviewCount: 23
-    },
-    {
-        image: img8,
-        name: 'PlayStation 5 Controller',
-        price: '50',
-        rating: 4.5,
-        reviewCount: 72
-    },
-    {
-        image: img9,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img10,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img11,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 5,
-        reviewCount: 126
-    },
-    {
-        image: img12,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 3.5,
-        reviewCount: 432
-    },   
-    {
-        image: img1,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img2,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img3,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 3.5,
-        reviewCount: 126
-    },
-    {
-        image: img4,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 4,
-        reviewCount: 432
-    },
-    {
-        image: img5,
-        name: 'Macbook Pro M3',
-        price: '2150',
-        rating: 5,
-        reviewCount: 40
-    },
-    {
-        image: img6,
-        name: 'Xbox Series X',
-        price: '750',
-        rating: 5,
-        reviewCount: 35
-    },
-    {
-        image: img7,
-        name: 'Ipad Air 2023',
-        price: '950',
-        rating: 3.5,
-        reviewCount: 23
-    },
-    {
-        image: img8,
-        name: 'PlayStation 5 Controller',
-        price: '50',
-        rating: 4.5,
-        reviewCount: 72
-    },
-    {
-        image: img9,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img10,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img11,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 5,
-        reviewCount: 126
-    },
-    {
-        image: img12,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 3.5,
-        reviewCount: 432
-    },
-    {
-        image: img1,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img2,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img3,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 3.5,
-        reviewCount: 126
-    },
-    {
-        image: img4,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 4,
-        reviewCount: 432
-    },
-    {
-        image: img5,
-        name: 'Macbook Pro M3',
-        price: '2150',
-        rating: 5,
-        reviewCount: 40
-    },
-    {
-        image: img6,
-        name: 'Xbox Series X',
-        price: '750',
-        rating: 5,
-        reviewCount: 35
-    },
-    {
-        image: img7,
-        name: 'Ipad Air 2023',
-        price: '950',
-        rating: 3.5,
-        reviewCount: 23
-    },
-    {
-        image: img8,
-        name: 'PlayStation 5 Controller',
-        price: '50',
-        rating: 4.5,
-        reviewCount: 72
-    },
-    {
-        image: img9,
-        name: 'PlayStation 5',
-        price: '750',
-        rating: 4.5,
-        reviewCount: 30
-    },
-    {
-        image: img10,
-        name: 'Iphone 15 Pro Max',
-        price: '1199',
-        rating: 5,
-        reviewCount: 89
-    },
-    {
-        image: img11,
-        name: 'Apple Watch Series 8',
-        price: '399',
-        rating: 5,
-        reviewCount: 126
-    },
-    {
-        image: img12,
-        name: 'Ipad Pro 11-inch',
-        price: '1299',
-        rating: 3.5,
-        reviewCount: 432
-    }   
-]
+];
 
 export default products;
