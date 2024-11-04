@@ -5,7 +5,7 @@ function ElectronicsPage() {
   return (
     <div className="bg-gray-900 min-w-fit">
       <NavigationBar />
-      <ProductCardOverview />
+      <ProductCardOverview heading="Electronics" />
       <Footer />
     </div>
   );

@@ -5,7 +5,7 @@ function ComputersPage() {
   return (
     <div className="bg-gray-900 min-w-fit">
       <NavigationBar />
-      <ProductCardOverview />
+      <ProductCardOverview heading="Computers"/>
       <Footer />
     </div>
   );

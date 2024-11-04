@@ -5,7 +5,7 @@ function MensFashionPage() {
   return (
     <div className="bg-gray-900 min-w-fit">
       <NavigationBar />
-      <ProductCardOverview />
+      <ProductCardOverview heading="Men's Fashion"/>
       <Footer />
     </div>
   );

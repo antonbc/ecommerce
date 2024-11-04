@@ -5,7 +5,7 @@ function HomeKitchenPage() {
   return (
     <div className="bg-gray-900 min-w-fit">
       <NavigationBar />
-      <ProductCardOverview />
+      <ProductCardOverview heading="Home and Kitchen"/>
       <Footer />
     </div>
   );
