@@ -16,7 +16,7 @@ function CategoriesCard() {
                     key={index} 
                     className="flex flex-col gap-3 p-5 bg-gray-800 rounded-xl border border-gray-700"
                 >
-                    <div className="w-full h-72 mx-auto">
+                    <div className="w-full h-60 xl:h-72 mx-auto">
                         <img 
                             src={card.image} 
                             alt="image" 
