@@ -6,7 +6,11 @@ import products from "../assets/products/products";
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-function ProductCardOverview() {
+interface ProductCardOverviewProps{
+  heading:string;
+}
+
+function ProductCardOverview({heading}: ProductCardOverviewProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const productsPerPage = 40; // Number of products to show at a time
   const totalPages = Math.ceil(products.length / productsPerPage);
@@ -35,13 +39,13 @@ function ProductCardOverview() {
         <div>
           <BreadCrumbs />
           <div className="flex justify-between items-center py-3">
-            <h1 className="font-bold text-gray-300 text-2xl">Electronics</h1>
+            <h1 className="font-bold text-gray-300 text-2xl">{heading}</h1>
             <SortButton />
           </div>
           <div className="flex gap-4">
             <FilterSideBar />
             <div className="flex flex-col w-full">
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-4">
+              <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 xl:grids-cols-5 gap-4 mb-4">
                 {selectedProducts.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
