@@ -20,13 +20,37 @@ const navLinks = [
 ];
 
 const departmentLinks = [
-  { label: "All Departments", to: "/department", icon: <TiThSmall /> },
-  { label: "Electronics", to: "/department/electronics", icon: <MdOutlineShoppingBag /> },
-  { label: "Computers", to: "/department/computers", icon: <RiComputerLine /> },
-  { label: `Men's Fashion`, to: "/department/mens-fashion", icon: <IoShirtOutline /> },
-  { label: `Women's Fashion`, to: "/department/womens-fashion", icon: <PiDress /> },
-  { label: "Sports & Outdoors", to: "/department/sports-outdoors", icon: <MdOutlineSportsTennis /> },
-  { label: "Home and Kitchen", to: "/department/home-kitchen", icon: <CgSmartHomeRefrigerator /> },
+  { label: "All Departments", to: "/departments", icon: <TiThSmall /> },
+  {
+    label: "Electronics",
+    to: "/departments/electronics",
+    icon: <MdOutlineShoppingBag />,
+  },
+  {
+    label: "Computers",
+    to: "/departments/computers",
+    icon: <RiComputerLine />,
+  },
+  {
+    label: `Men's Fashion`,
+    to: "/departments/mens-fashion",
+    icon: <IoShirtOutline />,
+  },
+  {
+    label: `Women's Fashion`,
+    to: "/departments/womens-fashion",
+    icon: <PiDress />,
+  },
+  {
+    label: "Sports & Outdoors",
+    to: "/departments/sports-outdoors",
+    icon: <MdOutlineSportsTennis />,
+  },
+  {
+    label: "Home and Kitchen",
+    to: "/departments/home-kitchen",
+    icon: <CgSmartHomeRefrigerator />,
+  },
 ];
 
 type LinkStyleProps = {
@@ -36,7 +60,7 @@ type LinkStyleProps = {
 
 const linkStyle = ({ isActive, isPending }: LinkStyleProps) => ({
   fontWeight: isActive ? "semibold" : "",
-  color: isPending ? "text-neutral-200" : "",
+  color: isPending ? "text-gray-200" : "",
 });
 
 function NavigationLinks() {
@@ -129,7 +153,7 @@ function NavigationLinks() {
             </div>
 
             <div className="mx-4 rounded-lg">
-              <h3 className="py-2 text-lg font-bold tracking-wide text-neutral-200">
+              <h3 className="py-2 text-lg font-bold tracking-wide">
                 Shop by Department
               </h3>
 
@@ -143,7 +167,9 @@ function NavigationLinks() {
                   >
                     <Link
                       to={department.to}
-                      className={`flex items-center gap-2 px-2 py-2 text-neutral-200 text-sm ${index === 0 ? "justify-center" : ""}`}
+                      className={`flex items-center gap-2 px-2 py-2 text-sm ${
+                        index === 0 ? "justify-center" : ""
+                      }`}
                     >
                       {department.icon}
                       {department.label}
@@ -154,7 +180,7 @@ function NavigationLinks() {
             </div>
 
             <div className="mx-4 rounded-lg">
-              <h3 className="py-2 text-lg font-bold tracking-wide text-neutral-200">
+              <h3 className="py-2 text-lg font-bold tracking-wide">
                 Help & Settings
               </h3>
 
@@ -166,7 +192,7 @@ function NavigationLinks() {
                   >
                     <Link
                       to={department.to}
-                      className="flex items-center gap-2 px-2 py-2 font-medium text-neutral-200 text-sm"
+                      className="flex items-center gap-2 px-2 py-2 font-medium text-sm"
                     >
                       {department.icon}
                       {department.label}
