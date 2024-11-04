@@ -1,6 +1,11 @@
-import { FaArrowLeft, FaArrowRight, FaStar, FaStarHalfAlt } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaStar,
+  FaStarHalf,
+} from "react-icons/fa";
 import { useState } from "react";
-import products from "./ui/card-slider/products";
+import products from "../assets/products/products";
 
 function PopularProducts() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,15 +25,20 @@ function PopularProducts() {
   }
 
   const startIndex = currentIndex * productsPerPage;
-  const selectedProducts = products.slice(startIndex, startIndex + productsPerPage);
+  const selectedProducts = products.slice(
+    startIndex,
+    startIndex + productsPerPage
+  );
 
-  function renderStars(rating : number){
+  function renderStars(rating: number) {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       if (i <= Math.floor(rating)) {
         stars.push(<FaStar key={i} className="text-yellow-500 text-sm" />);
       } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
-        stars.push(<FaStarHalfAlt key={i} className="text-yellow-500 text-sm" />);
+        stars.push(
+          <FaStarHalf key={i} className="text-yellow-500 text-sm" />
+        );
       } else {
         stars.push(<FaStar key={i} className="text-gray-400 text-sm" />);
       }
@@ -62,10 +72,13 @@ function PopularProducts() {
         <div className="px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-6 gap-4">
             {selectedProducts.map((product, index) => (
-              <div className="border border-gray-700 p-4 rounded-md bg-gray-800" key={index}>
+              <div
+                className="border border-gray-700 p-4 rounded-md bg-gray-800"
+                key={index}
+              >
                 <div className="w-full h-32 mx-auto">
                   <img
-                    src={product.image}
+                    src={product.imageUrl}
                     alt={`image ${index}`}
                     className="w-full h-full object-contain"
                   />
@@ -73,11 +86,13 @@ function PopularProducts() {
                 <div className="mt-2 flex flex-col gap-1/2">
                   <h2 className="text-sm font-semibold">{product.name}</h2>
                   <p className="text-sm">$ {product.price}</p>
-                  
+
                   {/* Star rating and review count */}
                   <div className="flex items-center">
                     {renderStars(product.rating)}
-                    <span className="ml-1 text-xs text-center">({product.reviewCount})</span>
+                    <span className="ml-1 text-xs text-center">
+                      ({product.reviewCount})
+                    </span>
                   </div>
                 </div>
               </div>
