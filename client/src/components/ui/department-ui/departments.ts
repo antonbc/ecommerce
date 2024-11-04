@@ -14,114 +14,116 @@ import img12 from '../../../assets/svgs/imac-components-dark.svg';
 const departments = [
     {
         departmentName: 'Electronics',
+        departmentNamePath: '/electronics',
         subCategories: [{
             image: img12,
-            categoryName: 'Laptop/Computers'
+            categoryName: 'Accessories'
         },{
             image: img8,
-            categoryName: 'Gaming'
+            categoryName: 'Headphones'
         },
         {
             image: img4,
-            categoryName: 'Tablets'
+            categoryName: 'Smart Phones'
         },
         {
             image: img9,
-            categoryName: 'Fashion/Clothes'
+            categoryName: 'Television'
         },]
 
     },
     {
         departmentName: 'Computers',
+        departmentNamePath: '/computers',
         subCategories: [{
             image: img1,
-            categoryName: 'Laptop/Computers'
+            categoryName: 'Computer Components'
         },{
             image: img2,
-            categoryName: 'Gaming'
+            categoryName: 'Monitors'
         },
         {
             image: img3,
-            categoryName: 'Tablets'
+            categoryName: 'Laptops'
         },
         {
             image: img4,
-            categoryName: 'Fashion/Clothes'
+            categoryName: 'External Components'
         },]
 
     },
     {
         departmentName: `Women's Fashion`,
+        departmentNamePath: '/womens-fashion',
         subCategories: [{
             image: img5,
-            categoryName: 'Laptop/Computers'
+            categoryName: 'Clothing'
         },{
             image: img6,
-            categoryName: 'Gaming'
+            categoryName: 'Shoes'
         },
         {
             image: img7,
-            categoryName: 'Tablets'
+            categoryName: 'Handbags'
         },
         {
             image: img8,
-            categoryName: 'Fashion/Clothes'
+            categoryName: 'Accessories'
         },]
 
     },
     {
         departmentName: `Men's Fashion`,
+        departmentNamePath: '/mens-fashion',
         subCategories: [{
             image: img9,
-            categoryName: 'Laptop/Computers'
+            categoryName: 'Clothing'
         },{
             image: img10,
-            categoryName: 'Gaming'
+            categoryName: 'Shoes'
         },
         {
             image: img11,
-            categoryName: 'Tablets'
+            categoryName: 'Watches'
         },
         {
             image: img12,
-            categoryName: 'Fashion/Clothes'
+            categoryName: 'Accessories'
         },]
     },
     {
         departmentName: `Sports & Outdoors`,
+        departmentNamePath: '/sports-outdoors',
         subCategories: [{
             image: img1,
-            categoryName: 'Laptop/Computers'
+            categoryName: 'Sports'
         },{
             image: img2,
-            categoryName: 'Gaming'
+            categoryName: 'Fitness'
         },
         {
             image: img3,
-            categoryName: 'Tablets'
-        },
-        {
-            image: img4,
-            categoryName: 'Fashion/Clothes'
+            categoryName: 'Outdoor Recreation'
         },]
 
     },
     {
         departmentName: `Home and Kitchen`,
+        departmentNamePath: '/home-kitchen',
         subCategories: [{
-            image: img1,
-            categoryName: 'Laptop/Computers'
+            image: img10,
+            categoryName: 'Kitchen & Dining'
         },{
-            image: img2,
-            categoryName: 'Gaming'
+            image: img12,
+            categoryName: 'Bath'
         },
         {
             image: img3,
-            categoryName: 'Tablets'
+            categoryName: 'Furniture'
         },
         {
             image: img4,
-            categoryName: 'Fashion/Clothes'
+            categoryName: 'Lighting & Ceiling Fans'
         },]
     } 
 ]
