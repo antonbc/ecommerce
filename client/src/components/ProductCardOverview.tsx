@@ -39,7 +39,7 @@ function ProductCardOverview({heading}: ProductCardOverviewProps) {
         <div>
           <BreadCrumbs />
           <div className="flex justify-between items-center py-3">
-            <h1 className="font-bold text-gray-300 text-2xl">{heading}</h1>
+            <h1 className="font-bold text-gray-300 text-3xl">{heading}</h1>
             <SortButton />
           </div>
           <div className="flex gap-4">
