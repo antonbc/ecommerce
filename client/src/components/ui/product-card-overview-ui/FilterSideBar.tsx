@@ -57,7 +57,7 @@ function FilterSideBar() {
     <div className="border border-gray-700 rounded-lg bg-gray-800 shadow-2xl h-full p-2 w-60 lg:w-72 space-y-4">
       <div className="flex flex-col px-2">
         <h4 className="font-semibold text-gray-300 text-xl">Categories</h4>
-        <div className="flex gap-2 my-2 bg-gray-700 border border-gray-600 rounded-lg p-2 relative">
+        <div className="flex gap-2 my-2 lg:my-3 bg-gray-700 border border-gray-600 rounded-lg p-2 relative">
           <div>
             <SearchIcon className="text-lg text-gray-400" />
           </div>
