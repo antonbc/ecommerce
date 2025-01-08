@@ -45,7 +45,7 @@ function ProductCardOverview({heading}: ProductCardOverviewProps) {
           <div className="flex gap-4">
             <FilterSideBar />
             <div className="flex flex-col w-full">
-              <div className="grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-3  lg:grid-cols-4 xl:grids-cols-5 gap-4 mb-4">
+              <div className="grid w-full grid-cols-2 md:grid-cols-3  lg:grid-cols-4 xl:grids-cols-5 gap-4 mb-4">
                 {selectedProducts.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}
