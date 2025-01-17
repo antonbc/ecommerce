@@ -1,6 +1,10 @@
 package com.anton.ecommerce_backend.model;
 
+import jakarta.persistence.Id;
+
 public class Category {
+
+    @Id
     private Long categoryId;
     private String categoryName;
 
