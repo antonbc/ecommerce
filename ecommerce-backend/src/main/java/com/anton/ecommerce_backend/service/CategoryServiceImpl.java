@@ -11,8 +11,8 @@ import java.util.Optional;
 
 @Service
 public class CategoryServiceImpl implements CategoryService{
-    private Long nextId = 1L;
     private final CategoryRepository categoryRepository;
+    private Long nextId = 1L;
 
     public CategoryServiceImpl(CategoryRepository categoryRepository){
         this.categoryRepository = categoryRepository;
@@ -28,6 +28,7 @@ public class CategoryServiceImpl implements CategoryService{
         category.setCategoryId(nextId++);
         categoryRepository.save(category);
     }
+
 
     @Override
     public String deleteCategory(Long categoryId) {
