@@ -12,7 +12,7 @@ import java.util.Date;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String description;
@@ -22,7 +22,7 @@ public class Product {
     private Date releaseDate;
     private boolean available;
     private int quantity;
-    private Double rating;
+    private float rating;
     private String imageUrl;
 
     public Long getId() {
@@ -97,11 +97,11 @@ public class Product {
         this.quantity = quantity;
     }
 
-    public Double getRating() {
+    public float getRating() {
         return rating;
     }
 
-    public void setRating(Double rating) {
+    public void setRating(float rating) {
         this.rating = rating;
     }
 
